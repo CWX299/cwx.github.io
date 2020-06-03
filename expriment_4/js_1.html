@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<script language=javascript>
+  function GetDate() {
+	  var now = new Date();
+     var year = now.getFullYear();
+     var month = now.getMonth()+1;
+     var date = now.getDate();
+alert("当前日期为: " + year+"-"+month+"-"+date);
+  }
+  function Random( ) {
+  var RandomNumber = Math.round(Math.random()*100 );
+  alert("所产生随机数为："+ RandomNumber);
+  }
+</script>
+<body>
+<INPUT type="button" value="产生0到100的随机数" name="hello1" onclick="Random();">
+<INPUT type="button" value="获取当前时间" name="hello2" onclick="GetDate();">
+</body>
+</html>
